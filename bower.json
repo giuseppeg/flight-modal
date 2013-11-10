@@ -1,0 +1,23 @@
+{
+  "name": "flight-modal",
+  "description": "A Modal component for Flight.",
+  "version": "0.1.0",
+  "main": "lib/modal.js",
+  "dependencies": {
+    "flight": "~1.1.0"
+  },
+  "devDependencies": {
+    "jasmine-flight": "*",
+    "jasmine-jquery": "*"
+  },
+  "ignore": [
+    ".gitignore",
+    ".gitattributes",
+    ".travis.yml",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "test",
+    "package.json",
+    "karma.conf.js"
+  ]
+}
