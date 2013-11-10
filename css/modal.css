@@ -1,0 +1,147 @@
+html.modal-is-active {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: -9999%;
+  z-index: 100;
+
+  width: 100%;
+  height: 100%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  /*word-spacing: -0.31em;*/
+  letter-spacing: -0.41em;
+  text-rendering: optimizespeed;
+  text-align: center;
+
+  opacity: 0;
+}
+
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+  content: "";
+}
+
+.no-js .modal:before { display: none; }
+.no-js .modal,
+.no-js .modal.modal-is-active {
+	position: static;
+  left: auto;
+
+	overflow: visible;
+  opacity: 1;
+
+	background-color: transparent;
+}
+
+.modal.modal-is-active {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal.modal-is-above { z-index: 101; }
+
+.no-js .modal,
+.modal.modal-is-active { opacity: 1; }
+
+.modal[data-size] > .modal-content { width: 95%; }
+.modal[data-size="s"] > .modal-content { max-width: 480px; }
+.modal[data-size="m"] > .modal-content  { max-width: 787px; }
+.modal[data-size="l"] > .modal-content  { max-width: 960px; }
+
+.modal.modal-fullscreen > .modal-content {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+
+  margin: 0 auto;
+  border: none;
+}
+
+.modal-content {
+  overflow: hidden;
+  position: relative;
+  z-index: 101;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  margin: 10px auto;
+
+ /* word-spacing: normal;*/
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 15px;
+  padding: 1.5rem;
+}
+
+
+.modal-fullscreen-btn,
+.modal-close {
+  position: absolute;
+  top: 7.5px;
+
+  height: 20px;
+
+  font-size: 0;
+  font-family: sans-serif;
+  line-height: 20px;
+  text-decoration: none;
+
+  opacity: 0.7;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.modal-fullscreen-btn {
+  top: 10px;
+  right: 35px;
+
+  display: block;
+
+  width: 9px;
+  height: 9px;
+
+  opacity: 0.5;
+  border: 3px solid;
+}
+
+.modal-fullscreen-btn:hover,
+.modal-fullscreen .modal-fullscreen-btn { opacity: 1; }
+.modal-fullscreen .modal-fullscreen-btn:hover { opacity: 0.5; }
+
+.modal-close { right: 7.5px; }
+
+.modal-close:before {
+  content: "\00d7";
+  opacity: 0.7;
+}
+
+.modal-fullscreen-btn:before,
+.modal-close:before {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.modal-close:hover,
+.modal-close:focus { opacity: 1; }

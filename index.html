@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>flight modal</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/modal-theme.css">
+    <link rel="stylesheet" href="css/modal-effects.css">
+  </head>
+  <body>
+
+    <div class="modal" id="modal" data-size="l" data-effect="scale">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>test</h2>
+            </div>
+            <div class="modal-body">
+                <p>casdiosdaas</p>
+                <p>casdiosdaas</p>
+                <a href="#modal2" class="modal-toggle">modal2</a>
+            </div>
+            <div class="modal-footer">
+                <p>footer</p>
+            </div>
+            <nav>
+                <a href="#modal" class="modal-close">close</a>
+                <a href="#modal" class="modal-fullscreen-btn">toggle fullscreen</a>
+            </nav>
+        </div>
+    </div>
+    <a href="#modal" class="modal-toggle">modal1</a>
+
+    <div class="modal" id="modal2" data-size="m" data-effect="fade">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>test2</h2>
+            </div>
+            <div class="modal-body">
+                <p>casdiosdaas</p>
+                <a href="#modal" class="modal-toggle">modal1</a>
+            </div>
+            <div class="modal-footer">
+                <p>footer</p>
+            </div>
+            <nav>
+                <a href="#modal" class="modal-close">close</a>
+                <a href="#modal" class="modal-fullscreen-btn">toggle fullscreen</a>
+            </nav>
+        </div>
+    </div>
+    <a href="#modal2" class="modal-toggle">modal2</a>
+
+    <div class="modal" id="modal3" data-size="s" data-effect="scale">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>test</h2>
+            </div>
+            <div class="modal-body">
+                <p>casdiosdaas</p>
+                <p>casdiosdaas</p>
+                <a href="#modal2" class="modal-toggle">modal2</a>
+            </div>
+            <div class="modal-footer">
+                <p>footer</p>
+            </div>
+            <nav>
+                <a href="#modal" class="modal-close">close</a>
+                <a href="#modal" class="modal-fullscreen-btn">toggle fullscreen</a>
+            </nav>
+        </div>
+    </div>
+    <a href="#modal3" class="modal-toggle">modal3</a>
+
+    <a href="#modalAll" class="modal-all">open all</a>
+
+    <!--[if lt IE 9]>
+    <script src="/bower_components/es5-shim/es5-shim.js"></script>
+    <script src="/bower_components/es5-shim/es5-sham.js"></script>
+    <![endif]-->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/requirejs/require.js" data-main="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-9670480-6');ga('send','pageview');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+.modal { background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-content {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+
+	background-color: #fff;
+
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-fullscreen-btn,
+.modal-close {
+	color: #6a6a6a;
+}
+
+.modal-fullscreen-btn { border-color: #6a6a6a; }
+.modal-fullscreen-btn:hover { border-color: #27ae60; }
+.modal-fullscreen .modal-fullscreen-btn { border-color: #27ae60; }
+.modal-fullscreen .modal-fullscreen-btn:hover { border-color: #6a6a6a; }
