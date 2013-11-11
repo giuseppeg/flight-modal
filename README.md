@@ -94,7 +94,7 @@ Fullscreen mode
 
 ### Events
 * `uiModalShown` fired when a modal is shown. The `eventData` object contains the modal id.
-* `uiModalHided` fired when a modal is hided. The `eventData` object contains the modal id.
+* `uiModalHidden` fired when a modal is hidden. The `eventData` object contains the modal id.
 * `uiModalFullScreenEnabled` fired when a modal goes in fullscreen mode. The `eventData` object contains the modal id.
 * `uiModalFullscreenDisabled` fired when a modal exits the fullscreen mode. The `eventData` object contains the modal id.
 * `uiModalRequested` when fired opens all the modal dialogs in the page. Pass an id with the `eventData` object to open a specific modal eg. `this.trigger(document, 'uiModalRequested', { id: 'myModal'} )`

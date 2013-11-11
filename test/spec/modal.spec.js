@@ -77,8 +77,8 @@ describeComponent('lib/modal', function () {
       expect(this.$node).not.toBeVisible();
     });
 
-    it('fires uiModalHided', function () {
-      var eventHideSpy = spyOnEvent(document, 'uiModalHided');
+    it('fires uiModalHidden', function () {
+      var eventHideSpy = spyOnEvent(document, 'uiModalHidden');
       this.component.trigger(document, 'uiModalCloseRequested');
       expect(eventHideSpy).toHaveBeenTriggeredOn(document);
     });
