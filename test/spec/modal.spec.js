@@ -158,8 +158,8 @@ describeComponent('lib/modal', function () {
       expect(eventSpy).toHaveBeenTriggeredOn(document);
     });
 
-    it('exits fullscreen and fires uiModalFullscreenDisabled if it was in fullscreen mode', function () {
-      var eventSpy = spyOnEvent(document, 'uiModalFullscreenDisabled');
+    it('exits fullscreen and fires uiModalFullScreenDisabled if it was in fullscreen mode', function () {
+      var eventSpy = spyOnEvent(document, 'uiModalFullScreenDisabled');
 
       this.$node.addClass(this.component.attr.fullScreenClass);
       this.component.trigger(document, 'uiModalToggleFullScreen');
